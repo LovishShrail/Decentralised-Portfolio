@@ -1,20 +1,28 @@
 .socials {
     background-color: var(--color-bg);
-
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 150px;
-    border-top: 1px var(--color-blue) solid;
-    border-bottom: 1px var(--color-blue) solid;
+    gap: 160px;
+    border-top: 2px solid var(--color-blue);
+    border-bottom: 2px solid var(--color-blue);
+    padding: 20px 0;
 }
 
+/* 🎭 **Social Icons (Default Style)** */
 .socials .icon {
     color: var(--color-blue);
-    margin: 20px 0 20px 0;
     height: 60px;
     width: 60px;
+    margin: 20px 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials .icon:hover {
+    color: var(--color-sky); /* Changes to a brighter color */
+    transform: scale(1.2); /* Increases size */
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 /* =========media querries========== */
